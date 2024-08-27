@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <div class="container">
+     <div class="container">
+     <h1>To Do List</h1>
+    </div>
+    <hr>
+    <div class="cuadroinput">
+        <h5>Nueva Tarea</h5>
+        <div class="input-group mb-3">
+            <input class="form-control" type="text" name="nuevaTarea" id="inputTarea" placeholder="Agregar tarea">
+            <button class="btn btn-success" id="botonAgregar">Agregar</button>
+        </div>
+    </div>
+    
+    <div class="container row">
+        <div class="container col">
+            <p>Total: <strong id="contTotal">0</strong><br>
+            Realizada: <strong id="contRealizada">0</strong></p>
+        </div>
+        <div class="container col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                            </svg>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="listaTareas">
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
